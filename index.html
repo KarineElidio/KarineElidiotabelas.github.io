@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td colspan="2">Linha 1 coluna 1 e 2</td>
+        <td rowspan="2">Coluna 1, linhas 1 e 2</td>
+      </tr>
+      <tr>
+        <td>Linha 2 célula 1</td>
+        <td>Linha 2 célula 3</td>
+      </tr>
+      <tr>
+        <td>Linha 3 célula 1</td>
+        <td>Linha 3 célula 2</td>
+        <td>Linha 3 célula 3</td>
+      </tr>
+    </table>
+    <br>
+    <table border="1" sumary="Tabela com preços em reais de ameixa preta e pera.">
+        <caption>Preços em reais de ameixa e pera em Campinas</caption>
+        <tr>
+            <td>
+                <th>Ameixa Preta</th>
+                <th>Pera</th>
+            </td>
+        </tr>
+        <tr>
+            <th>Atacado</th>
+            <td>1,00</td>
+            <td>1,50</td>
+        </tr>
+        <tr>
+            <th>Varejo</th>
+            <td>2,00</td>
+            <td>2,50</td>
+        </tr>
+    </table>
+    <br>
+    <table border='1'>
+        <caption>Preços em reais para laranja e maças importadas e nacionais nas cidades do Rio de Janeiro e de São Paulo</caption>
+        <tr>
+            <td></td>
+            <th colspan="2">Importada</th>
+            <th colspan="2">Nacional</th>
+        </tr>
+        <tr>
+            <td></td>
+            <th>Laranjas</th>
+            <th>Maças</th>
+            <th>Laranjas</th>
+            <th>Maças</th>
+        </tr>
+        <tr>
+            <th colspan="5">Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <th>Atacado</th>
+            <td>1,00</td>
+            <td>1,25</td>
+            <td>1,20</td>
+            <td>1,00</td>
+        </tr>
+        <tr>
+            <th>Varejo</th>
+            <td>2,00</td>
+            <td>3,00</td>
+            <td>1,80</td>
+            <td>1,60</td>
+        </tr>
+        <tr>
+            <th colspan="5">São Paulo</th>
+        </tr>
+        <tr>
+            <th>Atacado</th>
+            <td>1,20</td>
+            <td>1,30</td>
+            <td>1,00</td>
+            <td>0,80</td>
+        </tr>
+        <tr>
+            <th>Varejo</th>
+            <td>1,60</td>
+            <td>2,00</td>
+            <td>2,00</td>
+            <td>1,50</td>
+        </tr>
+    </table>
+
+    <form action="" method="POST">
+    
+    <br><br>
+
+    <label for="none">Nome:</label>
+    <input type="text" name="nome placeholder="Digite seu nome" size="50" maxlength="50">
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="text" type="password" name="senha" size="8" maxlength="8">
+    
+    <br><br><br>
+
+    <fieldset>
+        <label for="linguagemn">Linguagem que tem interesse</label>
+        <br><br>
+        <input type="checkbox" name="linguagem[]" value="c++">C++
+        <input type="checkbox" name="linguagem" value="php"> php
+        <input type="checkbox" name="linguagem[]" value="delphi">Delphi
+
+    </fieldset>
+
+    <label for="linguagemescolhida">Linguagem que irá cursar agora</label>
+    <br><br>
+    <input type="radio" name="curso" value="c++">C++
+    <input type="radio" name="curso" value="php">php
+    <input type="radio" name="curso" value="delphi">Delphi
+<br><br>
+    <select name="escola">
+        <option value="c++">C++</option>
+        <option value="php">php</option>
+        <option value="delphi">Delphi</option>
+    </select>
+<br><br>
+    <input type="submit" type="submit" id="submit" value="Enviar">
+
+</form>
+  </body>
+</html>
